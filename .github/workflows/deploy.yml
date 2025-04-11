@@ -44,6 +44,7 @@ jobs:
         run: |
           mkdir public/
           cd public/
+          git config --global init.defaultBranch main
           git init
           git add -A
           git commit -m "Create by workflows"
