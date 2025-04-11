@@ -42,6 +42,7 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
         run: |
+          mkdir public/
           cd public/
           git init
           git add -A
